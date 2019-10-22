@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/*----the body--*/
+body {
+  //position relative; dans le flux normal puis décalé par rapport à
+  //lui meme, ne crée pas de nouveau context d'empilement sauf si z-index ne 
+  //vaut pas auto
+  background-color: $white-color;
+  font-family: "Dekko", cursive;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: $black-color;
+  position: relative; // pour être l'ancêtre des positions absolutes : enfants du header
+  width: $width;
+  height: $height;
+  //overflow-y: scroll;
+  //overflow: hidden;
+  margin: auto; 
+  }
+
+  .hide{
+    display: none;
+  }
+/*---the header----*/
+
+header {
+  //positonnement static par défaut, les propriétés top, right et z-index
+  //ne s'appliquent pas
+  width: $width;
+  height: $height * 0.15;
+}
+
+#mylogo {
+  //position absolute, il sort du flux et aucun espace c'est aloué
+  //il faut lui donné un width et heigth.
+  //crée un nouveau espace d'emplilement si z-index nest pas auto
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  width: 4rem;
+  height: auto;
+  padding: $padding * 0.5;
+  border: 3px solid #81b29a;
+  border-radius: 20% 30%;
+  @include md{
+    width: 6rem;
+  }
+  @include lg {
+    width: 7rem;
+  }
+  @include xl {
+    width: 8rem;
+  }
+}
+
+/*---main of the body---*/
+main {
+  //positonnement static par défaut, les propriétés top, right et z-index
+  //ne s'appliquent pas
+  width: $width;
+  height: $height * 0.75;
+}
+
+h1 {
+  position: absolute;
+  right: 10px;
+  top: $height *0.1;
+  font-size: $size *0.2;
+  color: $white-color;
+  width: $width * 0.001;
+  height: $height * 0.001;
+
+}
+
+section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-left: $padding;
+  padding-right: $padding;
+ 
+  @include xs{
+    padding-left: $padding * 1.2;
+    padding-right: $padding * 1.2;
+  }
+  
+  @include sm{
+    padding-left: $padding * 2;
+    padding-right: $padding * 2;
+  }
+  
+  @include md{
+    padding-left: $padding * 2.2;
+    padding-right: $padding * 2.2;
+  }
+  @include lg {
+    padding-left: $padding * 7;
+    padding-right: $padding * 7;
+  }
+  @include xl{
+    padding-left: $padding * 8;
+    padding-right: $padding * 8;
+
+  }
+}
+
+ 
+
+#introduction {
+  color: $black-color;
+  font-size: $size;
+  text-align: center;
+  margin-left: $padding * 1.5;
+  margin-right: $padding * 1.5;
+  margin-bottom: $padding * 2;
+  @include xs{
+    font-size: $size * 1.2;
+    margin-left: $padding * 2;
+    margin-right: $padding * 2;
+    margin-bottom: $padding * 1.8;
+  }
+  @include sm{
+    font-size: $size * 1.3;
+    margin-bottom: $padding * 3.1;
+  }
+  @include md{
+    font-size: $size * 1.4;
+  }
+
+  @include lg {
+    font-size: $size * 1.4;
+  }
+  @include xl{
+    font-size: $size * 1.5;
+    margin-bottom: $padding * 1.8;
+  }
+}
+
+#content-start{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: $width * 0.5;
+  height: $height * 0.06;
+  margin: 0 auto;
+  @include xs{
+    height: $height * 0.08;
+  }
+  @include sm{
+    height: $height * 0.09;
+  }
+  @include md{
+    height: $height * 0.1;
+  }
+
+  @include lg {
+    height: $height * 0.12;
+
+  }
+  @include xl{
+    width: $width * 0.4;
+    height: $height * 0.18;
+  }
+}
+#btn-start {
+  background-color: $red-color;
+  color: $white-color;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  margin: auto;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: $width;
+  height: $height * 0.1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  p {
+    font-size: $size *0.7;
+    text-align: left;
+    @include sm{
+      font-size: 1rem;
+    }
+    @include md{
+      font-size: 1.4rem;
+    }
+    @include lg{
+      font-size: 1.8rem;
+    }
+    @include xl{
+      font-size: 1.9rem;
+    }
+  }
+}
+#icon-partenaire{
+  width: $width * 0.1;
+  height: auto ;
+}

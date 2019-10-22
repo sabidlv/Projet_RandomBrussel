@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 31.2" style="enable-background:new 0 0 60 31.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#81B29A;}
+</style>
+<a id="mylink" xlink:href="#" >
+	<g>
+		<ellipse class="st0" cx="30" cy="15.1" rx="30" ry="5.6"/>
+		<ellipse transform="matrix(0.9049 -0.4257 0.4257 0.9049 -5.6687 20.0346)" class="st0" cx="42" cy="22.7" rx="18.2" ry="3.8"/>
+		<ellipse transform="matrix(0.4196 -0.9077 0.9077 0.4196 17.1468 43.523)" class="st0" cx="42.6" cy="8.4" rx="3.8" ry="18.2"/>
+	</g>
+</a>
+</svg>

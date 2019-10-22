@@ -1,0 +1,89 @@
+.ellipse-right {
+  background-color: $orange-color;
+  position: fixed;
+  right: -150px;
+  bottom: 80px;
+  width: 350px;
+  height: 160px;
+  border-radius: 60% 60%;
+  z-index: $index * (-1);
+  @include rotate-ellipse;
+  // screen large
+  @include xs {
+    right: -250px;
+    bottom: 30px;
+    width: 420px;
+    height: 180px;
+  }
+  @include sm {
+    right: -250px;
+    bottom: 30px;
+    width: 480px;
+    height: 220px;
+  }
+  @include md {
+    right: -250px;
+    bottom: 30px;
+    width: 530px;
+    height: 250px;
+  }
+  @include lg {
+    @include rotate-ellipse(30deg);
+    right: -100px;
+    bottom: 60px;
+    width: 550px;
+    height: 250px;
+  }
+  @include xl {
+    right: -250px;
+    bottom: 30px;
+    width: 600px;
+    height: 250px;
+  }
+}
+
+.ellipse-left {
+  background-color: $red-color;
+  position: fixed;
+  left: -150px;
+  bottom: 270px;
+  width: 400px;
+  height: 160px;
+  border-radius: 60% 60%;
+  z-index: $index * (-1);
+  @include rotate-ellipse(-65deg);
+
+  @include xs {
+    left: -200px;
+    bottom: 170px;
+    width: 420px;
+    height: 180px;
+  }
+  @include sm {
+    left: -200px;
+    bottom: 120px;
+    width: 480px;
+    height: 220px;
+  }
+  @include md {
+    left: -200px;
+    bottom: 150px;
+    width: 520px;
+    height: 220px;
+  }
+  @include lg {
+    left: -200px;
+    bottom: 100px;
+    width: 550px;
+    height: 230px;
+  }
+  @include xl {
+    left: -200px;
+    bottom: 30px;
+    width: 560px;
+    height: 250px;
+  }
+}
+
+
+

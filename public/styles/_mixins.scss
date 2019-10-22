@@ -1,0 +1,18 @@
+// rotation for the ellipses
+@mixin rotate-ellipse($rotation: 45deg) {
+  -ms-transform: rotate($rotation); //Microsoft
+  -webkit-transform: rotate($rotation); //Safari, Chrome
+  -moz-transform: rotate($rotation); //Mozilla
+  -o-transform: rotate($rotation); //Opera
+  transform: rotate($rotation);
+}
+
+//animation 1 des bars du menu hamburger
+
+@mixin translate-y($pos-y: 0px) {
+  -ms-transform: translateY($pos-y); //Microsoft
+  -webkit-transform: translateY($pos-y); //Safari, Chrome
+  -moz-transform: translateY($pos-y); //Mozilla
+  -o-transform: translateY($pos-y); //Opera
+  transform: translateY($pos-y);
+}

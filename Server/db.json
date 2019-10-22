@@ -1,0 +1,11 @@
+{
+    "list": [{"id" : 0, "name": "coucou"},
+            {"id": 1, "name": "zouzou"}],
+    "all": 
+    { "id": 0,
+      "name": "blabla",
+      "description":"dddd",
+      "photo" : "https://toto.com/coccinelle.com"  
+
+    }        
+}
