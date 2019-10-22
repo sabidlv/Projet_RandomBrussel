@@ -44,9 +44,9 @@ export const myfct = function constructRoute(val1, val2, val3) {
       const rando = Math.floor(Math.random() * hasardFilter.length);
       choiceRoute.push(hasardFilter[rando]);
       bighasard = reject((el) => el === hasardFilter[rando])(bighasard);
-    } const flag = false;
-    return flag;
-  };
+      debugger;
+    }
+  };// hasard1
   if (flag1 && flag3) {
     const mymax = objBetween(choiceRoute[0].latitude, choiceRestaurant[rand3].latitude).maxi;
     const mymin = objBetween(choiceRoute[0].latitude, choiceRestaurant[rand3].latitude).mini;
@@ -59,27 +59,31 @@ export const myfct = function constructRoute(val1, val2, val3) {
     const mymax = objBetween(choiceRestaurant[rand3].latitude, choiceRoute[1].latitude).maxi;
     const mymin = objBetween(choiceRestaurant[rand3].latitude, choiceRoute[1].latitude).mini;
     mesHasards(mymax, mymin);
+    // choiceRoute[choiceRoute.length - 1].key = 'hasard2';
     flag4 = true;
   }
   if (flag4) {
     const mymax = objBetween(choiceRoute[4].latitude, choiceRoute[1].latitude).maxi;
     const mymin = objBetween(choiceRoute[4].latitude, choiceRoute[1].latitude).mini;
     mesHasards(mymax, mymin);
+    // choiceRoute[choiceRoute.length - 1].key = 'hasard3';
+    const putName = choiceRoute.filter((el) => el.key === 'hasard');
+    if (putName.length > 1) {
+      const calc = choiceRoute[1].latitude;
+      const dist1 = Math.abs(putName[0].latitude - calc);
+      const dist2 = Math.abs(putName[1].latitude - calc);
+      if (dist1 <= dist2) {
+        choiceRoute[choiceRoute.length - 1].key = 'hasard2';
+        choiceRoute[choiceRoute.length - 2].key = 'hasard3';
+      } else {
+        choiceRoute[choiceRoute.length - 2].key = 'hasard2';
+        choiceRoute[choiceRoute.length - 1].key = 'hasard3';
+      }
+    } else {
+      choiceRoute[choiceRoute.length - 1].key = 'hasard2';
+    }
   }
 
-  const calc = choiceRoute[1].latitude;
-  const dist1 = choiceRoute[choiceRoute.length - 1] - calc;
-  const dist2 = choiceRoute[choiceRoute.length - 2] - calc;
-  const abs1 = Math.abs(calc, dist1);
-  const abs2 = Math.abs(calc, dist2);
-  if (abs1 <= abs2) {
-    choiceRoute[choiceRoute.length - 1].key = 'hasard2';
-    choiceRoute[choiceRoute.length - 2].key = 'hasard3';
-  } else {
-    choiceRoute[choiceRoute.length - 2].key = 'hasard2';
-    choiceRoute[choiceRoute.length - 1].key = 'hasard3';
-  }
   console.table(choiceRoute);
-  console.log('test github');
   return choiceRoute;
 };

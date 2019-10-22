@@ -212,7 +212,7 @@ export const hasard = [
     description: ' nono no n blbllblblblbcclblbl bien bien',
     url: '',
     image: 'G1.png',
-    latitude: 56,
+    latitude: 52,
     longitude: 2,
   },
 
