@@ -44,7 +44,6 @@ export const myfct = function constructRoute(val1, val2, val3) {
       const rando = Math.floor(Math.random() * hasardFilter.length);
       choiceRoute.push(hasardFilter[rando]);
       bighasard = reject((el) => el === hasardFilter[rando])(bighasard);
-      debugger;
     }
   };// hasard1
   if (flag1 && flag3) {
