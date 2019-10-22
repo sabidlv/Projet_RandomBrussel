@@ -212,9 +212,20 @@ export const hasard = [
     description: ' nono no n blbllblblblbcclblbl bien bien',
     url: '',
     image: 'G1.png',
-    latitude: 52,
+    latitude: 56,
     longitude: 2,
   },
 
-
 ];
+
+const hasardeux = {
+  id: 6,
+  key: 'hasardeux',
+  nom: '  Grand Place',
+  adresse: 'rue de la concert 1',
+  description: ' nono no n blbllblblblbcclblbl bien bien',
+  url: '',
+  image: 'G1.png',
+  latitude: 56,
+  longitude: 2,
+};
