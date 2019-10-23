@@ -223,6 +223,7 @@ footer {
   overflow: visible;
   width: auto;
   height: auto;
+  position: initial;
   color: $red-color;
   @include xs{
     font-size: 2.5rem;
@@ -264,9 +265,10 @@ footer {
   }
   @include md{
     font-size: 1.6rem;
+    
   }
   @include lg{
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   @include xl{
     font-size: 2rem;
