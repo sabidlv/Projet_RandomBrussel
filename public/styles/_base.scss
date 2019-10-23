@@ -248,6 +248,8 @@ footer {
   width: 100%;
   background-color: $green-color;
   border: none;
+  color: white;
+  cursor: pointer;
 }
 .show {
   display: inline-block;
@@ -317,5 +319,8 @@ footer {
       font-size: 1.3rem;
     }
   }
+}
+.confirmation {
+  color: $red-color;
 }
 // FIN PAGE CONTACT
