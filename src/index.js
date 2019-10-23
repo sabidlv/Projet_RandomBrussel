@@ -3,6 +3,7 @@ import swal from 'sweetalert';
 import { myanime, mymenuAnime } from './app/animation';
 import { parcours } from './app/Data/dataTable';
 import { myfct } from './app/table';
+import 'drawsvg';
 
 
 // animation: accceuil et menu:
@@ -24,6 +25,9 @@ $('#arrow').on('click', () => {
       $('#div-route').css('display', 'block');
       $('#arrow').css('display', 'none');
       $('#arrow2').css('display', 'none');
+      $('#fig-route').show();
+      const mySVG = $('#fig-route').drawsvg();
+      mySVG.drawsvg('animate');
     }
   });
 });
