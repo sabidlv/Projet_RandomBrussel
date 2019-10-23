@@ -113,10 +113,10 @@ section {
 
   }
   @include lg {
-    font-size: $size * 1.5;
+    font-size: $size * 1.6;
     margin-left:$width* 0.18;
     margin-right:$width* 0.18;
-    margin-bottom: $height * 0.1;
+    margin-bottom: $height * 0.07;
   }
   @include xl{
     font-size: $width * 0.03;
@@ -147,7 +147,7 @@ section {
     height: $height * 0.08;
   }
   @include lg {
-    border-radius: 15px;
+    border-radius: 12px;
     height: $height * 0.08;
 
   }
@@ -206,7 +206,7 @@ footer {
       font-size: $width * 0.02;
     }
     @include lg{
-      font-size: $width * 0.02;
+      font-size: $width * 0.018;
     }
     @include xl{
       font-size: $width * 0.02;

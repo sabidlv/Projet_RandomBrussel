@@ -34,10 +34,10 @@
 .div-input {
   width: $width *0.8;
   height: auto;
-  padding-left: $padding *4;
+  padding-left: $padding *3;
   margin: auto;
   @include xs{
-    width: $width * 0.5;
+    width: $width * 0.6 ;
   }
   @include sm{
     width: $width * 0.5;
@@ -45,6 +45,7 @@
   }
   @include lg{
     width: $width*0.4;
+    padding-left: $padding * 6;
     padding-bottom: $padding *0.4;
   }
   @include xl{
@@ -115,7 +116,7 @@ h3 {
   }
   @include lg{
   font-size: $size * 3.1; 
-  margin-left:$padding *8;
+  margin-left:$padding *16;
   margin-bottom: $padding * 1.8;
   }
   @include xl{
@@ -148,6 +149,10 @@ h3 {
     width: $width * 0.1;
     right: $width * 0.20;
   }
+  @include lg{
+    width: $width * 0.08;
+    right: $width * 0.25;
+  }
 
 }
 
@@ -173,6 +178,11 @@ h3 {
     top: $height * 0.75;
     left: $width * 0.20;
   }
+  @include lg{
+    width: $width * 0.08;
+    top: $height * 0.75;
+    left: $width * 0.25;
+  }
 
 }
 
@@ -187,10 +197,9 @@ h3 {
   transform: translate(-50%, -50%);  
   width: $width * 0.8;
   height: $height * 0.7;  
-  border-radius: 10%;
+  border-radius: 30px;
   border: 1px solid $black-color;
  // overflow: hidden;
-
   padding: $padding;
   margin: auto;
   @include xs{
@@ -204,6 +213,7 @@ h3 {
   }
   @include lg{
     width: $width *0.5;
+    padding: $padding * 2;
   }
   @include xl{
     width: $width *0.6;
@@ -223,23 +233,23 @@ h3 {
 .resize{
   position: relative;
   display: inline-block;
-  font-size: $size * 0.8;
+  font-size: $size * 0.7  ;
   word-wrap: break-word;
   margin: $padding * 0.1 auto;
   @include xs{
-    font-size: $size * 1;
+    font-size: $size * 0.8;
     margin: $padding * 0.2 auto;
   }
   @include sm{
-    font-size: $size ;
+    font-size: $size *0.9 ;
     margin: $padding * 0.5 auto;
   }
   @include md{
-    font-size: $size * 1.1;
+    font-size: $size ;
     margin: $padding * 0.4 auto;
   }
   @include lg{
-    font-size: $size * 1.1;
+    font-size: $size;
   }
   @include xl{
     font-size: $size * 1;

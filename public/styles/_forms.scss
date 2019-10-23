@@ -29,17 +29,17 @@
     height: 250px;
   }
   @include lg {
-    @include rotate-ellipse(30deg);
-    right: -180px;
+    @include rotate-ellipse(40deg);
+    right: -200px;
     bottom: 60px;
     width: 650px;
     height: 300px;
   }
   @include xl {
     right: -220px;
-    bottom: 40px;
-    width: 900px;
-    height: 420px;
+    bottom: 50px;
+    width: 1000px;
+    height: 480px;
   }
 }
 
@@ -73,7 +73,7 @@
   }
   @include lg {
     left: -200px;
-    bottom: 80px;
+    bottom: 70px;
     width: 650px;
     height: 300px;
   }
