@@ -39,7 +39,7 @@ header {
   position: absolute;
   top: 15px;
   left: 25px;
-  width: 3rem;
+  width: 3.5rem;
   height: auto;
   padding: $padding * 0.4;
   border: 2px solid #81b29a;
@@ -54,7 +54,7 @@ header {
     width: 5rem;
   }
   @include lg {
-    width: 7rem;
+    width: 6rem;
   }
   @include xl {
     width: 8rem;
@@ -93,18 +93,12 @@ section {
 }
 #introduction {
   color: $black-color;
-  font-size: $width * 0.05;
+  font-size: $size*0.8;
   text-align: center;
   margin-top: $height * 0.03;
   margin-left: $height * 0.08;
   margin-right: $height * 0.08;
-  margin-bottom: $height * 0.07;
-  @include xs{
-    font-size: $width * 0.04;
-    margin-left:$height * 0.1;
-    margin-right:$height * 0.1;
-    margin-bottom: $padding * 2.5;
-  }
+  margin-bottom: $height * 0.06;
   @include sm{
     font-size: $width * 0.035;
     margin-left:$height * 0.2;
@@ -119,20 +113,20 @@ section {
 
   }
   @include lg {
-    font-size: $size * 1.4  ;
-    margin-left:$width* 0.15;
-    margin-right:$width* 0.15;
+    font-size: $size * 1.5;
+    margin-left:$width* 0.18;
+    margin-right:$width* 0.18;
     margin-bottom: $height * 0.1;
   }
   @include xl{
-    font-size: $size * 1.5;
-    margin-bottom: $padding * 1.8;
+    font-size: $width * 0.03;
+    margin-bottom: $height * 0.08 ;
   }
 }
 
 #content-start{
   background-color: $green-color;
-  width: $width * 0.6;
+  width: $width * 0.5;
   height: $height * 0.06;
   border-radius: 8px;
   display: flex;
@@ -154,16 +148,16 @@ section {
   }
   @include lg {
     border-radius: 15px;
-    height: $height * 0.10;
+    height: $height * 0.08;
 
   }
   @include xl{
-    width: $width * 0.4;
-    height: $height * 0.18;
+    width: $width * 0.3;
+    height: $height * 0.08;
   }
 }
 #btn-start {
-  font-size: $size;
+  font-size: $width * 0.06;
   color: $white-color;
   text-decoration: none;
   display: inline-block;
@@ -171,6 +165,15 @@ section {
   text-align: center;
   margin: auto;
   cursor: pointer;
+@include sm{
+  font-size: $width *0.05;
+}
+@include md{
+  font-size: $width * 0.04;
+}
+@include lg{
+  font-size: $width* 0.03;
+}
 }
 
 footer {
@@ -189,12 +192,12 @@ footer {
   .footer-paraph {
     width: 100%;
     height: auto;
-    font-size: $width * 0.03;
+    font-size: $width * 0.04;
     text-align: center;
     align-items: center;
     align-content: center;
     @include xs{
-      font-size: $width * 0.02;
+      font-size: $width * 0.03;
     }
     @include sm{
       font-size: $width * 0.02;
@@ -203,7 +206,7 @@ footer {
       font-size: $width * 0.02;
     }
     @include lg{
-      font-size: $width * 0.03;
+      font-size: $width * 0.02;
     }
     @include xl{
       font-size: $width * 0.02;

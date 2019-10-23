@@ -1,9 +1,9 @@
 import $ from 'jquery';
 import swal from 'sweetalert';
+import drawsvg from 'drawsvg';
 import { myanime, mymenuAnime } from './app/animation';
 import { parcours } from './app/Data/dataTable';
 import { myfct } from './app/table';
-import 'drawsvg';
 
 
 // animation: accceuil et menu:

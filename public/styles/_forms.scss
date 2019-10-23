@@ -1,21 +1,16 @@
 .ellipse-right {
   background-color: $red-color;
   position: fixed;
-  right: -170px;
-  bottom: $height * 0.2;
+  right: -190px;
+  bottom: 30px;
   width: 350px;
   height: 160px;
   border-radius: 60% 60%;
   z-index: $index * (-1);
   @include rotate-ellipse;
-  @include sm {
-    right: -250px;
-    bottom: 30px;
-    width: 480px;
-    height: 220px;
-  }
+
   // screen large
-  /*@include xs {
+  @include xs {
     right: -220px;
     bottom: 30px;
     width: 420px;
@@ -28,43 +23,36 @@
     height: 220px;
   }
   @include md {
-    right: -250px;
+    right: -220px;
     bottom: 30px;
     width: 530px;
     height: 250px;
   }
   @include lg {
     @include rotate-ellipse(30deg);
-    right: -100px;
+    right: -180px;
     bottom: 60px;
-    width: 550px;
-    height: 250px;
+    width: 650px;
+    height: 300px;
   }
   @include xl {
-    right: -250px;
-    bottom: 30px;
-    width: 600px;
-    height: 250px;
-  }*/
+    right: -220px;
+    bottom: 40px;
+    width: 900px;
+    height: 420px;
+  }
 }
 
 .ellipse-left {
   background-color: $orange-color;
   position: fixed;
   left: -170px;
-  bottom: $height * 0.4;
+  bottom: 170px;
   width: 400px;
   height: 160px;
   border-radius: 60% 60%;
   z-index: $index * (-1);
   @include rotate-ellipse(-65deg);
-  @include sm {
-    left: -200px;
-    bottom: 120px;
-    width: 480px;
-    height: 220px;
-  }
-/*
   @include xs {
     left: -200px;
     bottom: 120px;
@@ -72,29 +60,29 @@
     height: 180px;
   }
   @include sm {
-    left: -200px;
-    bottom: 120px;
+    left: -220px;
+    bottom: 70px;
     width: 480px;
     height: 220px;
   }
   @include md {
     left: -200px;
-    bottom: 150px;
+    bottom: 80px;
     width: 520px;
     height: 220px;
   }
   @include lg {
     left: -200px;
-    bottom: 100px;
-    width: 550px;
-    height: 230px;
+    bottom: 80px;
+    width: 650px;
+    height: 300px;
   }
   @include xl {
     left: -200px;
-    bottom: 30px;
-    width: 560px;
-    height: 250px;
-  }*/
+    bottom: 160px;
+    width: 900px;
+    height: 450px;
+  }
 }
 
 
