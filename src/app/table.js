@@ -1,27 +1,25 @@
 import { reject } from 'ramda';
 import {
-  musees, restaurants, bars, hasard,
+  musees, restaurants, bars, hasard, hasardeux,
 } from './Data/dataTable';
 import { objBetween } from './Helpers/between';
 import { choiceUser } from './Helpers/choiceHasard';
-
 // --- corps du texte
 export const myfct = function constructRoute(val1, val2, val3) {
   let flag1; let flag2; let flag3 = false; let flag4 = false;
   const choiceRoute = []; let choiceRestaurant = [];
   let rand3;
-  if (choiceUser) {
+  if (choiceUser) { // chercher musée
     choiceRoute.push(choiceUser(val1, musees));
     flag1 = true;
   }
-  if (choiceUser) {
+  if (choiceUser) { // chercher bar
     choiceRoute.push(choiceUser(val3, bars));
     flag2 = true;
   }
-  if (flag1 && flag2) {
+  if (flag1 && flag2) { // chercher resto
     const mymax1 = objBetween(choiceRoute[0].latitude, choiceRoute[1].latitude).maxi;
     const mymin1 = objBetween(choiceRoute[0].latitude, choiceRoute[1].latitude).mini;
-
     choiceRestaurant = restaurants
       .filter((el) => val2 === el.type)
       .filter((el) => el.latitude >= mymin1 && el.latitude <= mymax1);
@@ -36,9 +34,7 @@ export const myfct = function constructRoute(val1, val2, val3) {
   const themin = objBetween(choiceRoute[0].latitude, choiceRoute[1].latitude).mini;
   let bighasard = hasard.filter((el) => el.latitude <= themax
    && el.latitude >= themin);
-
   const mesHasards = (mymax, mymin) => {
-    debugger;
     const toto = bighasard;
     const hasardFilter = toto.filter((el) => el.latitude >= mymin && el.latitude <= mymax);
     if (hasardFilter.length > 0) {
@@ -59,14 +55,13 @@ export const myfct = function constructRoute(val1, val2, val3) {
     const mymax = objBetween(choiceRestaurant[rand3].latitude, choiceRoute[1].latitude).maxi;
     const mymin = objBetween(choiceRestaurant[rand3].latitude, choiceRoute[1].latitude).mini;
     mesHasards(mymax, mymin);
-    // choiceRoute[choiceRoute.length - 1].key = 'hasard2';
     flag4 = true;
   }
   if (flag4) {
+    debugger;
     const mymax = objBetween(choiceRoute[4].latitude, choiceRoute[1].latitude).maxi;
     const mymin = objBetween(choiceRoute[4].latitude, choiceRoute[1].latitude).mini;
     mesHasards(mymax, mymin);
-    // choiceRoute[choiceRoute.length - 1].key = 'hasard3';
     const putName = choiceRoute.filter((el) => el.key === 'hasard');
     if (putName.length > 1) {
       const calc = choiceRoute[1].latitude;
@@ -81,9 +76,9 @@ export const myfct = function constructRoute(val1, val2, val3) {
       }
     } else {
       choiceRoute[choiceRoute.length - 1].key = 'hasard2';
+      choiceRoute.push(hasardeux);
     }
   }
-
   console.table(choiceRoute);
   return choiceRoute;
 };

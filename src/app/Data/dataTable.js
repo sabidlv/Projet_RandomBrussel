@@ -218,9 +218,9 @@ export const hasard = [
 
 ];
 
-const hasardeux = {
+export const hasardeux = {
   id: 6,
-  key: 'hasardeux',
+  key: 'hasard3',
   nom: '  Grand Place',
   adresse: 'rue de la concert 1',
   description: ' nono no n blbllblblblbcclblbl bien bien',

@@ -18,12 +18,10 @@ body {
   position: relative; // pour être l'ancêtre des positions absolutes : enfants du header
   width: $width;
   height: $height;
-  //overflow-y: scroll;
-  //overflow: hidden;
+  overflow: hidden;
   margin: auto; 
   }
-
-  .hide{
+.hide{
     display: none;
   }
 /*---the header----*/
@@ -121,11 +119,11 @@ section {
 
 #introduction {
   color: $black-color;
-  font-size: $size;
+  font-size: $size *0.8;
   text-align: center;
-  margin-left: $padding * 1.5;
-  margin-right: $padding * 1.5;
-  margin-bottom: $padding * 2;
+  margin-left: $height * 0.06;
+  margin-right: $height * 0.06;
+  margin-bottom: $height * 0.08;
   @include xs{
     font-size: $size * 1.2;
     margin-left: $padding * 2;
@@ -139,7 +137,6 @@ section {
   @include md{
     font-size: $size * 1.4;
   }
-
   @include lg {
     font-size: $size * 1.4;
   }
