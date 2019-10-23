@@ -1,16 +1,22 @@
 .ellipse-right {
-  background-color: $orange-color;
+  background-color: $red-color;
   position: fixed;
-  right: -150px;
-  bottom: 80px;
+  right: -170px;
+  bottom: $height * 0.2;
   width: 350px;
   height: 160px;
   border-radius: 60% 60%;
   z-index: $index * (-1);
   @include rotate-ellipse;
-  // screen large
-  @include xs {
+  @include sm {
     right: -250px;
+    bottom: 30px;
+    width: 480px;
+    height: 220px;
+  }
+  // screen large
+  /*@include xs {
+    right: -220px;
     bottom: 30px;
     width: 420px;
     height: 180px;
@@ -39,23 +45,29 @@
     bottom: 30px;
     width: 600px;
     height: 250px;
-  }
+  }*/
 }
 
 .ellipse-left {
-  background-color: $red-color;
+  background-color: $orange-color;
   position: fixed;
-  left: -150px;
-  bottom: 270px;
+  left: -170px;
+  bottom: $height * 0.4;
   width: 400px;
   height: 160px;
   border-radius: 60% 60%;
   z-index: $index * (-1);
   @include rotate-ellipse(-65deg);
-
+  @include sm {
+    left: -200px;
+    bottom: 120px;
+    width: 480px;
+    height: 220px;
+  }
+/*
   @include xs {
     left: -200px;
-    bottom: 170px;
+    bottom: 120px;
     width: 420px;
     height: 180px;
   }
@@ -82,7 +94,7 @@
     bottom: 30px;
     width: 560px;
     height: 250px;
-  }
+  }*/
 }
 
 

@@ -58,7 +58,6 @@ export const myfct = function constructRoute(val1, val2, val3) {
     flag4 = true;
   }
   if (flag4) {
-    debugger;
     const mymax = objBetween(choiceRoute[4].latitude, choiceRoute[1].latitude).maxi;
     const mymin = objBetween(choiceRoute[4].latitude, choiceRoute[1].latitude).mini;
     mesHasards(mymax, mymin);

@@ -25,28 +25,32 @@ body {
     display: none;
   }
 /*---the header----*/
-
 header {
   //positonnement static par défaut, les propriétés top, right et z-index
   //ne s'appliquent pas
   width: $width;
   height: $height * 0.15;
 }
-
 #mylogo {
   //position absolute, il sort du flux et aucun espace c'est aloué
   //il faut lui donné un width et heigth.
   //crée un nouveau espace d'emplilement si z-index nest pas auto
   position: absolute;
-  top: 20px;
-  left: 35px;
-  width: 4rem;
+  top: 15px;
+  left: 25px;
+  width: 3rem;
   height: auto;
-  padding: $padding * 0.5;
-  border: 3px solid #81b29a;
+  padding: $padding * 0.4;
+  border: 2px solid #81b29a;
   border-radius: 20% 30%;
+  @include xs{
+    width: 4rem;
+  }
+  @include sm{
+    width: 5rem;
+  }
   @include md{
-    width: 6rem;
+    width: 5rem;
   }
   @include lg {
     width: 7rem;
@@ -72,9 +76,7 @@ h1 {
   color: $white-color;
   width: $width * 0.001;
   height: $height * 0.001;
-
 }
-
 section {
   position: relative;
   top: 0;
@@ -87,58 +89,39 @@ section {
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding-left: $padding;
-  padding-right: $padding;
- 
-  @include xs{
-    padding-left: $padding * 1.2;
-    padding-right: $padding * 1.2;
-  }
-  
-  @include sm{
-    padding-left: $padding * 2;
-    padding-right: $padding * 2;
-  }
-  
-  @include md{
-    padding-left: $padding * 2.2;
-    padding-right: $padding * 2.2;
-  }
-  @include lg {
-    padding-left: $padding * 7;
-    padding-right: $padding * 7;
-  }
-  @include xl{
-    padding-left: $padding * 8;
-    padding-right: $padding * 8;
-
-  }
 }
-
- 
-
 #introduction {
   color: $black-color;
-  font-size: $size *0.8;
+  font-size: $width * 0.05;
   text-align: center;
-  margin-left: $height * 0.06;
-  margin-right: $height * 0.06;
-  margin-bottom: $height * 0.08;
+  margin-top: $height * 0.03;
+  margin-left: $height * 0.08;
+  margin-right: $height * 0.08;
+  margin-bottom: $height * 0.07;
   @include xs{
-    font-size: $size * 1.2;
-    margin-left: $padding * 2;
-    margin-right: $padding * 2;
-    margin-bottom: $padding * 1.8;
+    font-size: $width * 0.04;
+    margin-left:$height * 0.1;
+    margin-right:$height * 0.1;
+    margin-bottom: $padding * 2.5;
   }
   @include sm{
-    font-size: $size * 1.3;
-    margin-bottom: $padding * 3.1;
+    font-size: $width * 0.035;
+    margin-left:$height * 0.2;
+    margin-right:$height * 0.2;
+    margin-bottom: $padding * 3;
   }
   @include md{
-    font-size: $size * 1.4;
+    font-size: $width * 0.03;
+    margin-left:$width* 0.2;
+    margin-right:$width* 0.2;
+    margin-bottom: $height * 0.05;
+
   }
   @include lg {
-    font-size: $size * 1.4;
+    font-size: $size * 1.4  ;
+    margin-left:$width* 0.15;
+    margin-right:$width* 0.15;
+    margin-bottom: $height * 0.1;
   }
   @include xl{
     font-size: $size * 1.5;
@@ -147,26 +130,30 @@ section {
 }
 
 #content-start{
+  background-color: $green-color;
+  width: $width * 0.6;
+  height: $height * 0.06;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: $width * 0.5;
-  height: $height * 0.06;
   margin: 0 auto;
   @include xs{
-    height: $height * 0.08;
+    height: $height * 0.07;
   }
   @include sm{
-    height: $height * 0.09;
+    width: $width * 0.5;
+    height: $height * 0.07;
   }
   @include md{
-    height: $height * 0.1;
+    width: $width * 0.4;
+    height: $height * 0.08;
   }
-
   @include lg {
-    height: $height * 0.12;
+    border-radius: 15px;
+    height: $height * 0.10;
 
   }
   @include xl{
@@ -175,42 +162,50 @@ section {
   }
 }
 #btn-start {
-  background-color: $red-color;
+  font-size: $size;
   color: $white-color;
   text-decoration: none;
   display: inline-block;
   width: 100%;
   text-align: center;
-  border-radius: 12px;
   margin: auto;
   cursor: pointer;
 }
 
 footer {
+ // background-color: rgba($color: $green-color, $alpha: 0.7);
   position: fixed;
   bottom: 0;
   left: 0;
   width: $width;
   height: $height * 0.1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  p {
-    font-size: $size *0.7;
-    text-align: left;
+  justify-content: center;
+
+ 
+  .footer-paraph {
+    width: 100%;
+    height: auto;
+    font-size: $width * 0.03;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    @include xs{
+      font-size: $width * 0.02;
+    }
     @include sm{
-      font-size: 1rem;
+      font-size: $width * 0.02;
     }
     @include md{
-      font-size: 1.4rem;
+      font-size: $width * 0.02;
     }
     @include lg{
-      font-size: 1.8rem;
+      font-size: $width * 0.03;
     }
     @include xl{
-      font-size: 1.9rem;
+      font-size: $width * 0.02;
     }
   }
 }

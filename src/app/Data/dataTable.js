@@ -8,7 +8,6 @@ export const parcours = [
   { id: '#circle-six', key: 'bar' },
 ];
 
-
 export const musees = [
   {
     id: 1,
@@ -20,13 +19,13 @@ export const musees = [
     map: 'https://www.google.be/maps/place/Rue+Goffart+33,+1050+Ixelles/@50.8347336,4.3686885,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c49048e51685:0xf31ec620b047c7ad!8m2!3d50.8347302!4d4.3708772?hl=fr',
     url: 'https://www.musee-magritte-museum.be/fr',
     image: 'G1.png',
-    latitude: 54,
-    longitude: 4,
+    latitude: 50.842643,
+    longitude: 4.358598,
   }, {
     id: 2,
     key: 'musee',
     type: 'original',
-    nom: 'musée de l amusique',
+    nom: 'musée de la musique',
     adresse: 'rue de la musique',
     description: ' Le Musée Magritte abrite la plus grande collection de l’un des meilleurs artistes belges du XXe siècle. Le musée comporte plus de 250 œuvres.',
     map: 'https://www.google.be/maps/place/Rue+Goffart+33,+1050+Ixelles/@50.8347336,4.3686885,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c49048e51685:0xf31ec620b047c7ad!8m2!3d50.8347302!4d4.3708772?hl=fr',

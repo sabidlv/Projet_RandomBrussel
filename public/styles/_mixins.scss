@@ -1,5 +1,5 @@
 // rotation for the ellipses
-@mixin rotate-ellipse($rotation: 45deg) {
+@mixin rotate-ellipse($rotation: 50deg) {
   -ms-transform: rotate($rotation); //Microsoft
   -webkit-transform: rotate($rotation); //Safari, Chrome
   -moz-transform: rotate($rotation); //Mozilla
