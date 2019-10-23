@@ -305,32 +305,6 @@ i {
   color: $red-color;
 }
 
-// TEXT POPUP
-h2 {
-  font-size: $size * 1.2;     
-  margin-bottom: $padding * 0.2;
-  @include xs {
-    font-size: $size * 2.3;     
-    margin-bottom: $padding * 1;
-  }
-  @include sm {
-    font-size: $size * 2.3;     
-    margin-bottom: $padding * 1;
-  }
-}
-h4 {
-  font-size: $size * 0.8;     
-  margin-bottom: $padding * 0.2;
-  @include xs {
-    font-size: $size * 1.5;     
-    margin-bottom: $padding * 1;
-  }
-  @include sm {
-    font-size: $size * 0.8;     
-    margin-bottom: $padding * 1;
-  }
-}  
-// FIN TEXT POPUP
 
 // POPUP IMAGE SLIDER
 .popup-img{
