@@ -100,6 +100,7 @@ if ($('.page-route').length > 0) {
   route();
 }
 
+let slideIndex = 1;
 for (const path of parcours) {
   $(path.id).on('click', () => {
     if (flag1 && flag2 && flag3) {
@@ -118,7 +119,7 @@ for (const path of parcours) {
           $('.popup')
             .append(`<img id="myimage" src='./assets/images/parcours/${el.image}' alt='musée'>`)
             .append(`<h4 class="resize-title">${el.nom}</h4>`)
-            .append(`<a class="resize" href=${el.map} target='_blank' class= 'linkPopup'> ${el.adresse}</a>`)
+            .append(`<i class="fas fa-map-marker-alt"'></i><a class="resize" href=${el.map} target='_blank' class= 'linkPopup'> ${el.adresse}</a>`)
             .append(`<p class="resize">${el.description}</p>`)
             .append(`<a  class="resize" href=${el.url} target= '_blank' class = 'linkPopup'> Site of the place</a>`);
         } /* else if (el.key === path.key && el.key === 'hasard') {
@@ -132,6 +133,52 @@ for (const path of parcours) {
           compt++;
         } */
       }
+
+      // POPUP IMAGE SLIDER
+      $('#myimage').on('click', () => {
+        $('.overlay').fadeIn();
+        $('.popup-img')
+          .empty()
+          .append(
+            ` <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Mus%C3%A9e_Magritte%2C_Brussels%2C_in_June_2016.jpg">
+              <img class="mySlides" src="https://www.musee-magritte-museum.be/uploads/pages/images/dsc_3001_mmm_home_1_medium@2x.jpg">
+              <img class="mySlides" src="https://www.musee-magritte-museum.be/uploads/pages/images/dsc_9348_giacomobretzel_car_medium@2x.jpg">
+
+              <button class="prev"><i class="fas fa-caret-left"></i></button>
+              <button class="next"><i class="fas fa-caret-right"></i></button>
+            `,
+          )
+          . fadeIn();
+        $('.popup').hide();
+
+        function showDivs(n) {
+          const x = document.getElementsByClassName('mySlides');
+          if (n > x.length) { slideIndex = 1; }
+          if (n < 1) { slideIndex = x.length; }
+          for (let i = 0; i < x.length; i++) {
+            x[i].style.display = 'none';
+          }
+          x[slideIndex - 1].style.display = 'block';
+        }
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        $('.prev').on('click', (event) => {
+          event.stopPropagation();
+          plusDivs(1);
+        });
+        $('.next').on('click', (event) => {
+          event.stopPropagation();
+          plusDivs(-1);
+        });
+      });
+      $('.popup-img').on('click', () => {
+        $('.popup-img, .overlay').fadeOut();
+        $('.popup').show();
+      });
+      // FIN POPUP IMAGE SLIDER
     }
   });
 }
