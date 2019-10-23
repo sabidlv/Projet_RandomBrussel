@@ -6,7 +6,9 @@ import { objBetween } from './Helpers/between';
 import { choiceUser } from './Helpers/choiceHasard';
 // --- corps du texte
 export const myfct = function constructRoute(val1, val2, val3) {
-  let flag1; let flag2; let flag3 = false; let flag4 = false;
+  debugger;
+  let flag1 = false; let flag2 = false; let flag3 = false; let flag4 = false;
+  let flag = false;
   const choiceRoute = []; let choiceRestaurant = [];
   let rand3;
   if (choiceUser) { // chercher musée
@@ -34,6 +36,7 @@ export const myfct = function constructRoute(val1, val2, val3) {
   const themin = objBetween(choiceRoute[0].latitude, choiceRoute[1].latitude).mini;
   let bighasard = hasard.filter((el) => el.latitude <= themax
    && el.latitude >= themin);
+  // fonction hasard
   const mesHasards = (mymax, mymin) => {
     const toto = bighasard;
     const hasardFilter = toto.filter((el) => el.latitude >= mymin && el.latitude <= mymax);
@@ -41,21 +44,28 @@ export const myfct = function constructRoute(val1, val2, val3) {
       const rando = Math.floor(Math.random() * hasardFilter.length);
       choiceRoute.push(hasardFilter[rando]);
       bighasard = reject((el) => el === hasardFilter[rando])(bighasard);
+      flag = true;
+      return flag;
     }
-  };// hasard1
+    flag = false;
+    return flag;
+  };
+  // hasard1
   if (flag1 && flag3) {
     const mymax = objBetween(choiceRoute[0].latitude, choiceRestaurant[rand3].latitude).maxi;
     const mymin = objBetween(choiceRoute[0].latitude, choiceRestaurant[rand3].latitude).mini;
-    if (mesHasards) {
-      mesHasards(mymax, mymin);
+    const flagi = mesHasards(mymax, mymin);
+    if (flagi) {
       choiceRoute[choiceRoute.length - 1].key = 'hasard1';
     }
   }
   if (flag2 && flag3) {
     const mymax = objBetween(choiceRestaurant[rand3].latitude, choiceRoute[1].latitude).maxi;
     const mymin = objBetween(choiceRestaurant[rand3].latitude, choiceRoute[1].latitude).mini;
-    mesHasards(mymax, mymin);
-    flag4 = true;
+    const flagi = mesHasards(mymax, mymin);
+    if (flagi) {
+      flag4 = true;
+    }
   }
   if (flag4) {
     const mymax = objBetween(choiceRoute[4].latitude, choiceRoute[1].latitude).maxi;
@@ -73,10 +83,10 @@ export const myfct = function constructRoute(val1, val2, val3) {
         choiceRoute[choiceRoute.length - 2].key = 'hasard2';
         choiceRoute[choiceRoute.length - 1].key = 'hasard3';
       }
-    } else {
-      choiceRoute[choiceRoute.length - 1].key = 'hasard2';
-      choiceRoute.push(hasardeux);
     }
+  } else {
+    choiceRoute.push(hasardeux);
+    choiceRoute[choiceRoute.length - 1].key = 'hasard2';
   }
   console.table(choiceRoute);
   return choiceRoute;

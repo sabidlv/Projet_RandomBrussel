@@ -150,7 +150,7 @@ h3 {
     right: $width * 0.20;
   }
   @include lg{
-    width: $width * 0.08;
+    width: $width * 0.07;
     right: $width * 0.25;
   }
 
@@ -179,7 +179,7 @@ h3 {
     left: $width * 0.20;
   }
   @include lg{
-    width: $width * 0.08;
+    width: $width * 0.07;
     top: $height * 0.75;
     left: $width * 0.25;
   }

@@ -119,19 +119,10 @@ for (const path of parcours) {
           $('.popup')
             .append(`<img id="myimage" src='./assets/images/parcours/${el.image}' alt='musée'>`)
             .append(`<h4 class="resize-title">${el.nom}</h4>`)
-            .append(`<i class="fas fa-map-marker-alt"'></i><a class="resize" href=${el.map} target='_blank' class= 'linkPopup'> ${el.adresse}</a>`)
+            .append(`<div><i class="fas fa-map-marker-alt"'></i><a class="resize" href=${el.map} target='_blank' class= 'linkPopup'> ${el.adresse}</a></div>`)
             .append(`<p class="resize">${el.description}</p>`)
-            .append(`<a  class="resize" href=${el.url} target= '_blank' class = 'linkPopup'> Site of the place</a>`);
-        } /* else if (el.key === path.key && el.key === 'hasard') {
-          console.log(2);
-          $('.popup')
-            .append(`<img id="myimage" src='./assets/images/parcours/${hasards[compt].image}' alt='musée'>`)
-            .append(`<h4 class="resize-title">${hasards[compt].nom}</h4>`)
-            .append(`<a class="resize" href=${hasards[compt].map} target='_blank' class= 'linkPopup'> ${hasards[compt].adresse}</a>`)
-            .append(`<p class="resize">${hasards[compt].description}</p>`)
-            .append(`<a  class="resize" href=${hasards[compt].url} target= '_blank' class = 'linkPopup'> Site of the place</a>`);
-          compt++;
-        } */
+            .append(`<div><a  class="resize" href=${el.url} target= '_blank' class = 'linkPopup'> Site of the place</a></div>`);
+        }
       }
 
       // POPUP IMAGE SLIDER
