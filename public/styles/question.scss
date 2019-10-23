@@ -306,31 +306,37 @@ i {
 }
 
 
-// POPUP IMAGE SLIDER
+/*--------------------------- POPUP IMAGE SLIDER ---------------------------*/
 .popup-img{
   position: absolute;
   top: 50%;
   left: 50%;  
   transform: translate(-50%, -50%);  
-  width: 85%;  
-  @include xs{
-    width: 85%;
-  }
-  @include sm{
-    width: 75%;
-  }
-  @include md{
-    width: 73%;
-  }
-  @include lg{
-    width: 74%;
-  }
-  @include xl{
-    width: 50%;
-  }
+  width: 85%; 
   margin: auto;
   height: auto;  
-
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+    width: 80%;
+    @include xs{
+      width: 80%;
+    }
+    @include sm{
+      width: 70%;
+    }
+    @include md{
+      width: 80%;
+    }
+    @include lg{
+      width: 60%;
+    }
+    @include xl{
+      width: 57%;
+    }
+  }
 }
 .mybigImage {
   width: 100%;
@@ -371,4 +377,4 @@ i {
 button i {
   width: 15px;
 }
-// FIN POPUP IMAGE SLIDER
+/*--------------------------- FIN POPUP IMAGE SLIDER ---------------------------*/
