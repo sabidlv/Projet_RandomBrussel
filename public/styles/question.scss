@@ -249,7 +249,7 @@ h3 {
     margin: $padding * 0.4 auto;
   }
   @include lg{
-    font-size: $size;
+    font-size: $size*0.8;
   }
   @include xl{
     font-size: $size * 1;

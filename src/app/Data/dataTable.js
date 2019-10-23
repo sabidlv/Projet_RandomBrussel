@@ -75,6 +75,19 @@ export const musees = [
     latitude: 50.846443,
     longitude: 4.352480,
   },
+  {
+    id: 6,
+    key: 'musee',
+    type: 'original',
+    nom: 'Museum of Erotics and Mythology of Brussel',
+    adresse: 'Rue Sainte Anne 32, 1000 Brussels',
+    description: 'The purpose of this museum is to show the existence of the erotism since the sexual pleasure has been discovered by humanity.',
+    map: 'https://www.google.be/maps/place/Museum+of+Erotics+and+Mythology+of+Brussels/@50.8387102,4.3556439,16z/data=!4m22!1m16!4m15!1m6!1m2!1s0x47c3c48f41920797:0x3a7989c40e9b4bb1!2sSint-Bonifaasstraat,+1050+Elsene!2m2!1d4.364433!2d50.8360672!1m6!1m2!1s0x47c3c47dbf5411b9:0x7164c36d817d5d89!2sMuseum+of+Erotics+and+Mythology+of+Brussels,+Rue+Sainte-Anne+32,+1000+Bruxelles!2m2!1d4.355624!2d50.841304!3e2!3m4!1s0x47c3c47dbf5411b9:0x7164c36d817d5d89!8m2!3d50.841304!4d4.355624?hl=en',
+    url: 'https://www.m-e-m.be/index.html',
+    image: '',
+    latitude: 50.841766,
+    longitude: 4.355644,
+  },
 ];
 
 export const restaurants = [
@@ -158,17 +171,30 @@ export const restaurants = [
     longitude: 4.352725,
   },
   {
-    id: 6,
+    id: 7,
     key: 'restaurant',
     type: 'vegetarian',
     nom: 'Kokob',
     adresse: 'Rue des Grands Carmes 8A, 1000 Bruxelles',
     description: 'Ethiopian cuisine is rich in flavors and spices. Come discover  our wide selection of vegetarian dishes.',
-    map: '',
-    url: '',
+    map: 'https://www.google.be/maps/place/Kokob/@50.8455294,4.3464975,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c478552398ff:0xb57b465848358537!8m2!3d50.845526!4d4.3486862?hl=en',
+    url: 'https://www.kokob.be/en/',
     image: '',
     latitude: 50.845681,
     longitude: 4.348725,
+  },
+  {
+    id: 8,
+    key: 'restaurant',
+    type: 'vegetarian',
+    nom: 'Le New Makossa',
+    adresse: 'Rue Longue Vie 18, 1050 Bruxelles',
+    description: 'Ethiopian cuisine is rich in flavors and spices. Come discover  our wide selection of vegetarian dishes.',
+    map: 'https://www.google.be/maps/place/Le+New+Makossa/@50.8360678,4.364463,16z/data=!4m8!1m2!2m1!1sresto+africain+saint+boniface!3m4!1s0x0:0x9720c26e540bbcd9!8m2!3d50.8364233!4d4.3657619?hl=en',
+    url: 'https://www.facebook.com/newmakossa/?__tn__=%2Cd%2CP-R&eid=ARBwPK6o2z2g3sxX-9Rr6RnswqAxNGa5zGWJ6uPfpYeLnGKl18WtFhlMdaz6CDkNpPPRSuxDjHY9UJu-',
+    image: '',
+    latitude: 50.836874,
+    longitude: 4.362718,
   },
 
 ];
@@ -251,6 +277,19 @@ export const bars = [
     image: 'arc.png',
     latitude: 50.849281,
     longitude: 4.347527,
+  },
+  {
+    id: 7,
+    key: 'bar',
+    type: 'beer',
+    nom: 'L`Athénée',
+    adresse: 'Rue Jules Bouillon 2, 1050 Bruxelles',
+    description: 'Art deco-style cocktail bar, opened 1937, with banquette seating, art gallery & live music evenings.',
+    map: "https://www.google.be/maps/place/L'Ath%C3%A9n%C3%A9e/@50.835136,4.3642115,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c48fa61b7a71:0x7ee31c65a5b5c0f8!8m2!3d50.8351326!4d4.3664055?hl=en",
+    url: 'https://www.facebook.com/pages/Lath%C3%A9n%C3%A9e/132834420217202',
+    image: '',
+    latitude: 50.835336,
+    longitude: 4.366373,
   },
 ];
 
