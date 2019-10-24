@@ -1,6 +1,6 @@
 import { reject } from 'ramda';
 import {
-  musees, restaurants, bars, hasard, hasardeux,
+  musees, restaurants, bars, hasard, hasardeux, combler,
 } from './Data/dataTable';
 import { objBetween } from './Helpers/between';
 import { choiceUser } from './Helpers/choiceHasard';
@@ -83,6 +83,9 @@ export const myfct = function constructRoute(val1, val2, val3) {
         choiceRoute[choiceRoute.length - 2].key = 'hasard2';
         choiceRoute[choiceRoute.length - 1].key = 'hasard3';
       }
+    } else {
+      choiceRoute[choiceRoute.length - 1].key = 'hasard2';
+      choiceRoute.push(combler);
     }
   } else {
     choiceRoute.push(hasardeux);

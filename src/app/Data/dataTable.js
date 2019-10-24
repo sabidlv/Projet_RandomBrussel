@@ -11,6 +11,19 @@ export const parcours = [
 
 export const musees = [
   {
+    id: 2,
+    key: 'musee',
+    type: 'original',
+    nom: 'MIM - Musical Instruments Museum',
+    adresse: 'Rue Montagne de la Cour 2, 1000 Bruxelles',
+    description: 'The collection presents more than 1,100 historical and modern musical instruments, one of the richest in the world. In a beautifully restored complex in Brussels, of which one part is Art Nouveau and the other is Neoclassical in design ',
+    map: 'https://www.google.be/maps/place/Musical+Instruments+Museum/@50.8430976,4.3569396,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c480b41468cf:0x2521d2012cf3e663!8m2!3d50.8430942!4d4.3591283?hl=en',
+    url: 'http://www.mim.be/en',
+    image: 'mim.png',
+    latitude: 50.843125,
+    longitude: 4.359096,
+  },
+  /* {
     id: 1,
     key: 'musee',
     type: 'classic',
@@ -23,19 +36,7 @@ export const musees = [
     latitude: 50.842663,
     longitude: 4.358641,
   },
-  {
-    id: 2,
-    key: 'musee',
-    type: 'original',
-    nom: 'MIM - Musical Instruments Museum',
-    adresse: 'Rue Montagne de la Cour 2, 1000 Bruxelles',
-    description: 'The collection presents more than 1,100 historical and modern musical instruments, one of the richest in the world. In a beautifully restored complex in Brussels, of which one part is Art Nouveau and the other is Neoclassical in design ',
-    map: 'https://www.google.be/maps/place/Musical+Instruments+Museum/@50.8430976,4.3569396,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c480b41468cf:0x2521d2012cf3e663!8m2!3d50.8430942!4d4.3591283?hl=en',
-    url: 'http://www.mim.be/en',
-    image: 'mim.png',
-    latitude: 50.843291,
-    longitude: 4.359096,
-  },
+
   {
     id: 3,
     key: 'musee',
@@ -87,11 +88,11 @@ export const musees = [
     image: '',
     latitude: 50.841766,
     longitude: 4.355644,
-  },
+  }, */
 ];
 
 export const restaurants = [
-
+/*
   {
     id: 1,
     key: 'restaurant',
@@ -182,7 +183,7 @@ export const restaurants = [
     image: '',
     latitude: 50.845681,
     longitude: 4.348725,
-  },
+  }, */
   {
     id: 8,
     key: 'restaurant',
@@ -200,7 +201,7 @@ export const restaurants = [
 ];
 
 export const bars = [
-  {
+  /* {
     id: 1,
     key: 'bar',
     type: 'beer',
@@ -277,7 +278,7 @@ export const bars = [
     image: 'arc.png',
     latitude: 50.849281,
     longitude: 4.347527,
-  },
+  }, */
   {
     id: 7,
     key: 'bar',
@@ -291,6 +292,20 @@ export const bars = [
     latitude: 50.835336,
     longitude: 4.366373,
   },
+  /* {
+    id: 7,
+    key: 'bar',
+    type: 'beer',
+    nom: 'Moeder Lambic',
+    adresse: 'Place Fontainas 8, 1000 Bruxelles',
+    description: 'THEY SERVE BEAUTIFUL BEERS WITH BEAUTIFUL PEOPLE SINCE 2006',
+    map: 'https://www.google.be/maps/place/Moeder+Lambic/@50.8456437,4.3508305,16z/data=!4m22!1m16!4m15!1m6!1m2!1s0x47c3c479c912285d:0xdc0c933eb153970b!2sMoeder+Lambic,+Place+Fontainas,+Brussels!2m2!1d4.346961!2d50.8451203!1m6!1m2!1s0x47c3c350506346ad:0x98133fc2f0204c1d!2sMOOF+Museum,+Galerie+Horta+(Gare+centrale,+Grasmarkt+Straat+116,+1000+Brussel!2m2!1d4.3555209!2d50.846111!3e2!3m4!1s0x47c3c479c912285d:0xdc0c933eb153970b!8m2!3d50.8451203!4d4.346961?hl=en',
+    url: 'https://www.moederlambic.com/',
+    image: '',
+    latitude: 50.845508,
+    longitude: 4.346979,
+  }, */
+
 ];
 
 export const hasard = [
@@ -366,6 +381,54 @@ export const hasard = [
     latitude: 50.842750,
     longitude: 4.354042,
   },
+  {
+    id: 7,
+    key: 'hasard',
+    nom: 'Wall BD "Ric Hochet"',
+    adresse: 'Rue de Bon Secours 4, 1000 Bruxelles',
+    description: 'He is one of the most active characters in comics. Journalist, very sporty, he conducts his investigations at the wheel of his Porsche.',
+    map: 'https://www.google.com/maps/place/Foundation+Frison+Horta+%22A+Living+Museum%22/@50.8425503,4.3518316,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c47c284f00a1:0x16c07286341eab94!8m2!3d50.8425469!4d4.3540203',
+    url: 'https://visit.brussels/site/fr/place/Mur-BD-Ric-Hochet',
+    image: '',
+    latitude: 50.846377,
+    longitude: 4.347792,
+  },
+  {
+    id: 8,
+    key: 'hasard',
+    nom: 'Fontainas Place',
+    adresse: 'Place Fontainas, 1000 Bruxelles',
+    description: 'He is one of the most active characters in comics. Journalist, very sporty, he conducts his investigations at the wheel of his Porsche.',
+    map: 'https://www.google.com/maps/place/Foundation+Frison+Horta+%22A+Living+Museum%22/@50.8425503,4.3518316,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c47c284f00a1:0x16c07286341eab94!8m2!3d50.8425469!4d4.3540203',
+    url: 'https://visit.brussels/site/fr/place/Mur-BD-Ric-Hochet',
+    image: '',
+    latitude: 50.846377,
+    longitude: 4.347792,
+  },
+  {
+    id: 9,
+    key: 'hasard',
+    nom: 'Church of Notre-Dame de Bon Secours',
+    adresse: 'Rue du Marché au Charbon 91, 1000 Bruxelles',
+    description: 'A beautiful old church that was so peaceful when I stepped inside. Built around 400 years ago, it is well maintained and looks beautiful inside.',
+    map: 'https://www.google.be/maps/place/Church+of+Notre-Dame+de+Bon+Secours/@50.8458661,4.3487447,16z/data=!4m5!3m4!1s0x47c3c4784ad4fe23:0xe30aca9ab463e5e5!8m2!3d50.8456392!4d4.3477737?hl=en',
+    url: 'https://www.bruxellesmabelle.net/en/lieux/eglise-notre-dame-de-bon-secours/',
+    image: '',
+    latitude: 50.845508,
+    longitude: 4.346957,
+  },
+  {
+    id: 9,
+    key: 'hasard',
+    nom: 'Saint Boniface Church',
+    adresse: 'Rue de la Paix 21, 1050 Ixelles',
+    description: 'A beautiful old church that was so peaceful when I stepped inside. Built around 400 years ago, it is well maintained and looks beautiful inside.',
+    map: 'https://www.google.be/maps/place/Saint+Boniface+Church/@50.8356798,4.3651178,17z/data=!4m5!3m4!1s0x47c3c48f0dec4943:0x584939b51d922b4c!8m2!3d50.835463!4d4.365327?hl=en',
+    url: 'http://www.saintecroix.eu/saint-boniface/',
+    image: '',
+    latitude: 50.835558,
+    longitude: 4.365327,
+  },
 ];
 
 export const hasardeux = {
@@ -379,4 +442,14 @@ export const hasardeux = {
   image: 'Gp.png',
   latitude: 50.846894,
   longitude: 4.352414,
+};
+export const combler = {
+  id: 7,
+  key: 'hasard3',
+  nom: 'in construct',
+  adresse: '',
+  description: 'Noting to show for the moment ',
+  map: '',
+  url: '',
+  image: 'under.jpg',
 };

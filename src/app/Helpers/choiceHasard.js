@@ -1,7 +1,9 @@
 
 // fonction selon le type demander
 export const choiceUser = (choiceValue, dbTable) => {
+  debugger;
   const tempTable = dbTable.filter((el) => el.type === choiceValue);
+
   if (tempTable.length > 0) {
     const rand = Math.floor(Math.random() * tempTable.length);
     return tempTable[rand];

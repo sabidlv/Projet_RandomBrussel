@@ -115,13 +115,18 @@ for (const path of parcours) {
       // const hasards = tabRetour.filter((x) => x.key === 'hasard'); && el.key !== 'hasard'
       for (const el of tabRetour) {
         if (el.key === path.key) {
+          debugger;
           console.log(1);
           $('.popup')
-            .append(`<img id="myimage" src='./assets/images/parcours/${el.image}' alt='musée'>`)
+            .append(`<img id="myimage" src='./assets/images/parcours/${el.image}' alt=''>`)
             .append(`<h4 class="resize-title">${el.nom}</h4>`)
-            .append(`<div><i class="fas fa-map-marker-alt"'></i><a class="resize" href=${el.map} target='_blank' class= 'linkPopup'> ${el.adresse}</a></div>`)
-            .append(`<p class="resize">${el.description}</p>`)
-            .append(`<div><a  class="resize" href=${el.url} target= '_blank' class = 'linkPopup'> Site of the place</a></div>`);
+
+            .append(`<p class="resize">${el.description}</p>`);
+          if (el.url !== '') {
+            $('.popup')
+              .append(`<div><i class="fas fa-map-marker-alt"'></i><a class="resize" href=${el.map} target='_blank' class= 'linkPopup'> ${el.adresse}</a></div>`)
+              .append(`<div><a  class="resize" href=${el.url} target= '_blank' class = 'linkPopup'> WebSite of the place</a></div>`);
+          }
         }
       }
 
