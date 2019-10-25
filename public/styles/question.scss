@@ -29,7 +29,7 @@
 
 .div-question {
   width: $width *0.9;
-  height: 30vh;
+  height: auto;
 }
 .div-input {
   width: $width *0.8;
@@ -199,7 +199,7 @@ h3 {
   height: $height * 0.7;  
   border-radius: 30px;
   border: 1px solid $black-color;
- // overflow: hidden;
+  overflow: hidden;
   padding: $padding;
   margin: auto;
   @include xs{
@@ -233,11 +233,11 @@ h3 {
 .resize{
   position: relative;
   display: inline-block;
-  font-size: $size * 0.7  ;
+  font-size: $size * 0.6 ;
   word-wrap: break-word;
-  margin: $padding * 0.1 auto;
+  margin: $padding * 0.2;
   @include xs{
-    font-size: $size * 0.8;
+    font-size: $size * 0.6;
     margin: $padding * 0.2 auto;
   }
   @include sm{

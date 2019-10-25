@@ -11,20 +11,20 @@ export const parcours = [
 
 export const musees = [
   {
-    id: 2,
+    id: 1,
     key: 'musee',
     type: 'original',
     nom: 'MIM - Musical Instruments Museum',
     adresse: 'Rue Montagne de la Cour 2, 1000 Bruxelles',
-    description: 'The collection presents more than 1,100 historical and modern musical instruments, one of the richest in the world. In a beautifully restored complex in Brussels, of which one part is Art Nouveau and the other is Neoclassical in design ',
+    description: 'The collection presents more than 1,100 historical and modern musical instruments, one of the richest in the world. In a beautifully restored complex in Brussels. ',
     map: 'https://www.google.be/maps/place/Musical+Instruments+Museum/@50.8430976,4.3569396,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c480b41468cf:0x2521d2012cf3e663!8m2!3d50.8430942!4d4.3591283?hl=en',
     url: 'http://www.mim.be/en',
     image: 'mim.png',
     latitude: 50.843125,
     longitude: 4.359096,
   },
-  /* {
-    id: 1,
+  {
+    id: 2,
     key: 'musee',
     type: 'classic',
     nom: 'The Magritte Museum',
@@ -38,6 +38,36 @@ export const musees = [
   },
 
   {
+    id: 4,
+    key: 'musee',
+    type: 'classic',
+    nom: 'Belgian Brewers Museum',
+    adresse: 'Grand Place 10, 1000 Bruxelles',
+    description: 'Brewery museum displaying 18th-century equipment, plus a modern brewing hall & a cafe with tastings.',
+    map: 'https://www.google.be/maps/place/Belgian+Brewers+Museum/@50.846382,4.3534023,17z/data=!4m8!1m2!2m1!1smuseum!3m4!1s0x0:0x3ad7fccf34638f9d!8m2!3d50.846219!4d4.3525232?hl=en',
+    url: 'https://beermuseum.be/fr',
+    image: 'beer.png',
+    latitude: 50.846443,
+    longitude: 4.352480,
+  },
+
+  {
+    id: 6,
+    key: 'musee',
+    type: 'original',
+    nom: 'Museum of Erotics and Mythology of Brussel',
+    adresse: 'Rue Sainte Anne 32, 1000 Brussels',
+    description: 'The purpose of this museum is to show the existence of the erotism since the sexual pleasure has been discovered by humanity.',
+    map: 'https://www.google.be/maps/place/Museum+of+Erotics+and+Mythology+of+Brussels/@50.8387102,4.3556439,16z/data=!4m22!1m16!4m15!1m6!1m2!1s0x47c3c48f41920797:0x3a7989c40e9b4bb1!2sSint-Bonifaasstraat,+1050+Elsene!2m2!1d4.364433!2d50.8360672!1m6!1m2!1s0x47c3c47dbf5411b9:0x7164c36d817d5d89!2sMuseum+of+Erotics+and+Mythology+of+Brussels,+Rue+Sainte-Anne+32,+1000+Bruxelles!2m2!1d4.355624!2d50.841304!3e2!3m4!1s0x47c3c47dbf5411b9:0x7164c36d817d5d89!8m2!3d50.841304!4d4.355624?hl=en',
+    url: 'https://www.m-e-m.be/index.html',
+    image: '',
+    latitude: 50.841766,
+    longitude: 4.355644,
+  },
+
+
+  /*
+    {
     id: 3,
     key: 'musee',
     type: 'classic',
@@ -92,7 +122,72 @@ export const musees = [
 ];
 
 export const restaurants = [
-/*
+  {
+    id: 1,
+    key: 'restaurant',
+    type: 'vegetarian',
+    nom: 'Le New Makossa',
+    adresse: 'Rue Longue Vie 18, 1050 Bruxelles',
+    description: 'Ethiopian cuisine is rich in flavors and spices. Come discover  our wide selection of vegetarian dishes.',
+    map: 'https://www.google.be/maps/place/Le+New+Makossa/@50.8360678,4.364463,16z/data=!4m8!1m2!2m1!1sresto+africain+saint+boniface!3m4!1s0x0:0x9720c26e540bbcd9!8m2!3d50.8364233!4d4.3657619?hl=en',
+    url: 'https://www.facebook.com/newmakossa/?__tn__=%2Cd%2CP-R&eid=ARBwPK6o2z2g3sxX-9Rr6RnswqAxNGa5zGWJ6uPfpYeLnGKl18WtFhlMdaz6CDkNpPPRSuxDjHY9UJu-',
+    image: '',
+    latitude: 50.836874,
+    longitude: 4.362718,
+  },
+  {
+    id: 2,
+    key: 'restaurant',
+    type: 'vegetarian',
+    nom: 'Kokob',
+    adresse: 'Rue des Grands Carmes 8A, 1000 Bruxelles',
+    description: 'Ethiopian cuisine is rich in flavors and spices. Come discover  our wide selection of vegetarian dishes.',
+    map: 'https://www.google.be/maps/place/Kokob/@50.8455294,4.3464975,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c478552398ff:0xb57b465848358537!8m2!3d50.845526!4d4.3486862?hl=en',
+    url: 'https://www.kokob.be/en/',
+    image: '',
+    latitude: 50.845581,
+    longitude: 4.348725,
+  },
+  {
+    id: 3,
+    key: 'restaurant',
+    type: 'traditionnal',
+    nom: 'B!g Mama',
+    adresse: ' Place de la Vieille Halle aux Blés 41, 1000, Brussels',
+    description: 'Reception and very friendly and very professional service. Good traditional homemade food, quality products and very reasonable price. Very teasing and nice server.',
+    map: 'https://www.google.be/maps/place/Kokob/@50.8455294,4.3464975,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c478552398ff:0xb57b465848358537!8m2!3d50.845526!4d4.3486862?hl=en',
+    url: 'http://www.bigmama.be/',
+    image: '',
+    latitude: 50.844229,
+    longitude: 4.352425,
+  },
+  {
+    id: 4,
+    key: 'restaurant',
+    type: 'traditionnal',
+    nom: 'Ultime Atome',
+    adresse: ' Rue Saint-Boniface 10, 1050 Bruxelles',
+    description: 'Reception and very friendly and very professional service. Good traditional homemade food, quality products and very reasonable price. Very teasing and nice server.',
+    map: 'https://www.google.be/maps/place/Ultime+Atome/@50.8358521,4.3601154,16z/data=!4m5!3m4!1s0x47c3c48f40596a21:0x3b7f1fcb83776f13!8m2!3d50.8358487!4d4.3644928',
+    url: 'https://ultimeatome.be/en',
+    image: '',
+    latitude: 50.836103,
+    longitude: 4.364471,
+  },
+  {
+    id: 5,
+    key: 'restaurant',
+    type: 'vegetarian',
+    nom: 'Mr falafel',
+    adresse: 'Boulevard Maurice Lemonnier 53, 1000 Bruxelles',
+    description: 'This snack bar offers mainly bread with falafel. A small salad bar is at your disposal, you will compose your own salad with hummus, vegetables, raw vegetables.',
+    map: 'https://www.google.be/maps/place/Mr+Falafel/@50.8442576,4.3429165,17z/data=!4m5!3m4!1s0x47c3c56b1d204ed9:0xef591df00bd9a38f!8m2!3d50.8442542!4d4.3451052',
+    url: 'https://cultureremains.com/monsieur-falafel-meilleure-pitta-falafel-de-bruxelles/',
+    image: '',
+    latitude: 50.844417,
+    longitude: 4.345084,
+  },
+  /*
   {
     id: 1,
     key: 'restaurant',
@@ -171,36 +266,51 @@ export const restaurants = [
     latitude: 50.847522,
     longitude: 4.352725,
   },
-  {
-    id: 7,
-    key: 'restaurant',
-    type: 'vegetarian',
-    nom: 'Kokob',
-    adresse: 'Rue des Grands Carmes 8A, 1000 Bruxelles',
-    description: 'Ethiopian cuisine is rich in flavors and spices. Come discover  our wide selection of vegetarian dishes.',
-    map: 'https://www.google.be/maps/place/Kokob/@50.8455294,4.3464975,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c478552398ff:0xb57b465848358537!8m2!3d50.845526!4d4.3486862?hl=en',
-    url: 'https://www.kokob.be/en/',
-    image: '',
-    latitude: 50.845681,
-    longitude: 4.348725,
-  }, */
-  {
-    id: 8,
-    key: 'restaurant',
-    type: 'vegetarian',
-    nom: 'Le New Makossa',
-    adresse: 'Rue Longue Vie 18, 1050 Bruxelles',
-    description: 'Ethiopian cuisine is rich in flavors and spices. Come discover  our wide selection of vegetarian dishes.',
-    map: 'https://www.google.be/maps/place/Le+New+Makossa/@50.8360678,4.364463,16z/data=!4m8!1m2!2m1!1sresto+africain+saint+boniface!3m4!1s0x0:0x9720c26e540bbcd9!8m2!3d50.8364233!4d4.3657619?hl=en',
-    url: 'https://www.facebook.com/newmakossa/?__tn__=%2Cd%2CP-R&eid=ARBwPK6o2z2g3sxX-9Rr6RnswqAxNGa5zGWJ6uPfpYeLnGKl18WtFhlMdaz6CDkNpPPRSuxDjHY9UJu-',
-    image: '',
-    latitude: 50.836874,
-    longitude: 4.362718,
-  },
+  */
+
 
 ];
 
 export const bars = [
+  {
+    id: 7,
+    key: 'bar',
+    type: 'beer',
+    nom: 'L`Athénée',
+    adresse: 'Rue Jules Bouillon 2, 1050 Bruxelles',
+    description: 'Art deco-style cocktail bar, opened 1937, with banquette seating, art gallery & live music evenings.',
+    map: "https://www.google.be/maps/place/L'Ath%C3%A9n%C3%A9e/@50.835136,4.3642115,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c48fa61b7a71:0x7ee31c65a5b5c0f8!8m2!3d50.8351326!4d4.3664055?hl=en",
+    url: 'https://www.facebook.com/pages/Lath%C3%A9n%C3%A9e/132834420217202',
+    image: '',
+    latitude: 50.835336,
+    longitude: 4.366373,
+  },
+  {
+    id: 7,
+    key: 'bar',
+    type: 'beer',
+    nom: 'Moeder Lambic',
+    adresse: 'Place Fontainas 8, 1000 Bruxelles',
+    description: 'THEY SERVE BEAUTIFUL BEERS WITH BEAUTIFUL PEOPLE SINCE 2006',
+    map: 'https://www.google.be/maps/place/Moeder+Lambic/@50.8456437,4.3508305,16z/data=!4m22!1m16!4m15!1m6!1m2!1s0x47c3c479c912285d:0xdc0c933eb153970b!2sMoeder+Lambic,+Place+Fontainas,+Brussels!2m2!1d4.346961!2d50.8451203!1m6!1m2!1s0x47c3c350506346ad:0x98133fc2f0204c1d!2sMOOF+Museum,+Galerie+Horta+(Gare+centrale,+Grasmarkt+Straat+116,+1000+Brussel!2m2!1d4.3555209!2d50.846111!3e2!3m4!1s0x47c3c479c912285d:0xdc0c933eb153970b!8m2!3d50.8451203!4d4.346961?hl=en',
+    url: 'https://www.moederlambic.com/',
+    image: '',
+    latitude: 50.845508,
+    longitude: 4.346979,
+  },
+  {
+    id: 3,
+    key: 'bar',
+    type: 'concert',
+    nom: 'Le Cercle des voyageurs',
+    adresse: 'Rue des Grands Carmes 18, 1000 Bruxelles',
+    description: 'A skilful blend of tearoom and tourist office for travellers in search of something new.',
+    map: 'https://www.google.com/maps/place/Le+Cercle+des+Voyageurs/@50.8452609,4.3472095,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c47903aa70b9:0xc0a74ac662a18d8a!8m2!3d50.8452609!4d4.3493982?hl=it-IT',
+    url: 'https://www.lecercledesvoyageurs.com/',
+    image: 'valige.png',
+    latitude: 50.845518,
+    longitude: 4.349398,
+  },
   /* {
     id: 1,
     key: 'bar',
@@ -227,19 +337,7 @@ export const bars = [
     latitude: 50.846491,
     longitude: 4.348589,
   },
-  {
-    id: 3,
-    key: 'bar',
-    type: 'beer',
-    nom: 'Le Cercle des voyageurs',
-    adresse: 'Rue des Grands Carmes 18, 1000 Bruxelles',
-    description: 'A skilful blend of tearoom and tourist office for travellers in search of something new.',
-    map: 'https://www.google.com/maps/place/Le+Cercle+des+Voyageurs/@50.8452609,4.3472095,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c47903aa70b9:0xc0a74ac662a18d8a!8m2!3d50.8452609!4d4.3493982?hl=it-IT',
-    url: 'https://www.lecercledesvoyageurs.com/',
-    image: 'valige.png',
-    latitude: 50.845518,
-    longitude: 4.349398,
-  },
+
   {
     id: 4,
     key: 'bar',
@@ -279,32 +377,8 @@ export const bars = [
     latitude: 50.849281,
     longitude: 4.347527,
   }, */
-  {
-    id: 7,
-    key: 'bar',
-    type: 'beer',
-    nom: 'L`Athénée',
-    adresse: 'Rue Jules Bouillon 2, 1050 Bruxelles',
-    description: 'Art deco-style cocktail bar, opened 1937, with banquette seating, art gallery & live music evenings.',
-    map: "https://www.google.be/maps/place/L'Ath%C3%A9n%C3%A9e/@50.835136,4.3642115,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c48fa61b7a71:0x7ee31c65a5b5c0f8!8m2!3d50.8351326!4d4.3664055?hl=en",
-    url: 'https://www.facebook.com/pages/Lath%C3%A9n%C3%A9e/132834420217202',
-    image: '',
-    latitude: 50.835336,
-    longitude: 4.366373,
-  },
-  /* {
-    id: 7,
-    key: 'bar',
-    type: 'beer',
-    nom: 'Moeder Lambic',
-    adresse: 'Place Fontainas 8, 1000 Bruxelles',
-    description: 'THEY SERVE BEAUTIFUL BEERS WITH BEAUTIFUL PEOPLE SINCE 2006',
-    map: 'https://www.google.be/maps/place/Moeder+Lambic/@50.8456437,4.3508305,16z/data=!4m22!1m16!4m15!1m6!1m2!1s0x47c3c479c912285d:0xdc0c933eb153970b!2sMoeder+Lambic,+Place+Fontainas,+Brussels!2m2!1d4.346961!2d50.8451203!1m6!1m2!1s0x47c3c350506346ad:0x98133fc2f0204c1d!2sMOOF+Museum,+Galerie+Horta+(Gare+centrale,+Grasmarkt+Straat+116,+1000+Brussel!2m2!1d4.3555209!2d50.846111!3e2!3m4!1s0x47c3c479c912285d:0xdc0c933eb153970b!8m2!3d50.8451203!4d4.346961?hl=en',
-    url: 'https://www.moederlambic.com/',
-    image: '',
-    latitude: 50.845508,
-    longitude: 4.346979,
-  }, */
+
+  /*  */
 
 ];
 
@@ -429,11 +503,23 @@ export const hasard = [
     latitude: 50.835558,
     longitude: 4.365327,
   },
+  {
+    id: 10,
+    key: 'hasard',
+    nom: ' Futur Lumumba Place',
+    adresse: 'Rue de la Paix 21, 1050 Ixelles',
+    description: 'A beautiful old church that was so peaceful when I stepped inside. Built around 400 years ago, it is well maintained and looks beautiful inside.',
+    map: '',
+    url: 'https://www.rtbf.be/info/regions/bruxelles/detail_ixelles-la-futur-place-lumumba-n-existe-que-sur-googlemaps?id=9043743',
+    image: '',
+    latitude: 50.835495,
+    longitude: 4.366136,
+  },
 ];
 
 export const hasardeux = {
   id: 7,
-  key: 'hasard3',
+  key: 'hasard2',
   nom: '  Grand Place',
   adresse: 'Grand-Place de Bruxelles, 1000 Bruxelles',
   description: ' The Grand-Place is a UNESCO World Heritage site. Construction on it began in the 15th century. its a wonderful hotch-potch of Gothic, opulent baroque, neoclassical and neogothic. The tower is more or less 96 meters tall.',

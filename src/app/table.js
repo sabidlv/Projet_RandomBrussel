@@ -6,7 +6,6 @@ import { objBetween } from './Helpers/between';
 import { choiceUser } from './Helpers/choiceHasard';
 // --- corps du texte
 export const myfct = function constructRoute(val1, val2, val3) {
-  debugger;
   let flag1 = false; let flag2 = false; let flag3 = false; let flag4 = false;
   let flag = false;
   const choiceRoute = []; let choiceRestaurant = [];
@@ -20,6 +19,7 @@ export const myfct = function constructRoute(val1, val2, val3) {
     flag2 = true;
   }
   if (flag1 && flag2) { // chercher resto
+    debugger;
     const mymax1 = objBetween(choiceRoute[0].latitude, choiceRoute[1].latitude).maxi;
     const mymin1 = objBetween(choiceRoute[0].latitude, choiceRoute[1].latitude).mini;
     choiceRestaurant = restaurants
@@ -41,9 +41,9 @@ export const myfct = function constructRoute(val1, val2, val3) {
     const toto = bighasard;
     const hasardFilter = toto.filter((el) => el.latitude >= mymin && el.latitude <= mymax);
     if (hasardFilter.length > 0) {
-      const rando = Math.floor(Math.random() * hasardFilter.length);
-      choiceRoute.push(hasardFilter[rando]);
-      bighasard = reject((el) => el === hasardFilter[rando])(bighasard);
+      // const rando = Math.floor(Math.random() * hasardFilter.length);
+      choiceRoute.push(hasardFilter[0]);
+      bighasard = reject((el) => el === hasardFilter[0])(bighasard);
       flag = true;
       return flag;
     }
@@ -59,6 +59,7 @@ export const myfct = function constructRoute(val1, val2, val3) {
       choiceRoute[choiceRoute.length - 1].key = 'hasard1';
     }
   }
+
   if (flag2 && flag3) {
     const mymax = objBetween(choiceRestaurant[rand3].latitude, choiceRoute[1].latitude).maxi;
     const mymin = objBetween(choiceRestaurant[rand3].latitude, choiceRoute[1].latitude).mini;
@@ -84,12 +85,11 @@ export const myfct = function constructRoute(val1, val2, val3) {
         choiceRoute[choiceRoute.length - 1].key = 'hasard3';
       }
     } else {
-      choiceRoute[choiceRoute.length - 1].key = 'hasard2';
       choiceRoute.push(combler);
     }
   } else {
     choiceRoute.push(hasardeux);
-    choiceRoute[choiceRoute.length - 1].key = 'hasard2';
+    choiceRoute.push(combler);
   }
   console.table(choiceRoute);
   return choiceRoute;
