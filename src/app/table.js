@@ -19,7 +19,6 @@ export const myfct = function constructRoute(val1, val2, val3) {
     flag2 = true;
   }
   if (flag1 && flag2) { // chercher resto
-    debugger;
     const mymax1 = objBetween(choiceRoute[0].latitude, choiceRoute[1].latitude).maxi;
     const mymin1 = objBetween(choiceRoute[0].latitude, choiceRoute[1].latitude).mini;
     choiceRestaurant = restaurants
