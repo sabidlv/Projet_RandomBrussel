@@ -39,7 +39,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "drawsvg": "^1.1.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ramda": "^0.26.1",
     "react": "^16.10.2",
     "svg.js": "^2.7.1",
